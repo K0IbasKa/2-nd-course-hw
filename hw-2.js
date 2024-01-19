@@ -1,7 +1,8 @@
 //№1
 let a = 10;
 alert(a);
-alert(a = 20);
+a = 20;
+alert(a);
 //№2
 const iPhoneIReleaseRate = 2009;
 alert(iPhoneIReleaseRate);
@@ -41,9 +42,9 @@ let user = {
     name: 'Иван',
     age: 22,
     isAdmin: true,
-    "city of residence": 'Раменское'
 }
-user.age++;
+user.age = 23;
+user['city of residence'] = 'Раменское'
 delete user['city of residence'];
 let info = prompt("Какую информацию хотите узнать о пользователе?", "введите название одного из полей объекта");
 alert(user[info]);
