@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: calc(50% - 343px/2);
+        padding-right: calc(50% - 343px/2);
+    }
+
+    .title {
+        text-align: center;
+
+        &__big {
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+
+        &__game {
+            font-size: 32px;
+        }
+    }
+
+    .top {
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+        }
+
+        &__home {
+            padding-top: 239px;
+            height: 735px;
+        }
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 0px;
+
+            &_desktop {
+                display: none;
+            }
+
+            &_mobile {
+                display: inline;
+            }
+        }
+    }
+
+    .content {
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+        }
+
+        &__link {
+            width: 343px;
+        }
+    }
+
+    .game {
+
+        &-box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 64px;
+            padding-top: 81px;
+            padding-bottom: 85px;
+        }
+
+        &__content {
+            grid-column: span 4;
+            align-items: center;
+        }
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        &__img {
+            width: 344px;
+            height: 236px;
+            grid-column: span 4;
+            margin-left: 0px;
+        }
+    }
+}

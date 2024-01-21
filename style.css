@@ -30,6 +30,10 @@ a {
   font-weight: 700;
   margin-bottom: 32px;
 }
+.title__game {
+  font-size: 48px;
+  font-weight: 700;
+}
 
 .top {
   background-repeat: no-repeat;
@@ -62,6 +66,9 @@ a {
 .top__text_bold {
   font-weight: bold;
 }
+.top__text_mobile {
+  display: none;
+}
 
 .link {
   color: #FFF;
@@ -69,6 +76,46 @@ a {
 .link__top {
   font-size: 18px;
   font-weight: 400;
+}
+.link__game {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.game {
+  background-color: #000915;
+}
+.game-box {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 233.5px;
+  padding-bottom: 233.5px;
+}
+.game__content {
+  grid-column: span 6;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: center;
+}
+.game__text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.game__button {
+  width: 234px;
+  height: 48px;
+  border: none;
+  border-radius: 30px;
+  background: #9C0332;
+}
+.game__img {
+  width: 485px;
+  height: 333px;
+  grid-column: span 6;
+  margin-left: 135px;
 }
 
 .content {
@@ -105,4 +152,71 @@ a {
 }
 .content__link_3 {
   background-image: url(img/bgi__c_3.png);
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+  .title {
+    text-align: center;
+  }
+  .title__big {
+    font-size: 32px;
+    margin-bottom: 0px;
+  }
+  .title__game {
+    font-size: 32px;
+  }
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .top__home {
+    padding-top: 239px;
+    height: 735px;
+  }
+  .top__text {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .top__text_desktop {
+    display: none;
+  }
+  .top__text_mobile {
+    display: inline;
+  }
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .content__link {
+    width: 343px;
+  }
+  .game-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px;
+    padding-top: 81px;
+    padding-bottom: 85px;
+  }
+  .game__content {
+    grid-column: span 4;
+    align-items: center;
+  }
+  .game__text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .game__img {
+    width: 344px;
+    height: 236px;
+    grid-column: span 4;
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */

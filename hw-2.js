@@ -42,9 +42,9 @@ let user = {
     name: 'Иван',
     age: 22,
     isAdmin: true,
-}
+};
 user.age = 23;
-user['city of residence'] = 'Раменское'
+user['city of residence'] = 'Раменское';
 delete user['city of residence'];
 let info = prompt("Какую информацию хотите узнать о пользователе?", "введите название одного из полей объекта");
 alert(user[info]);
