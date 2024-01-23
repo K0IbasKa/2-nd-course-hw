@@ -16,22 +16,28 @@ let obj = {
     Вася: 300,
     Петя: 400
 }
-for (let salary in obj) {
-    console.log(`${salary} - зарплата ${obj[salary]} долларов`);
+for (let key in obj) {
+    console.log(`${key} - зарплата ${obj[key]} долларов`);
 }
 //№5
 let n = 2000;
-let num = 1;
-while (n / 2 ** num > 50) {
+let num = 0;
+while (n > 50) {
+    n /= 2;
     num++;
 }
 console.log(num);
 //№6
+let daysOfTheMonth = Number(prompt("Введите количество дней в месяце:"));
+while (daysOfTheMonth < 28 && daysOfTheMonth > 31) {
+    console.log("Введено неверное число дней в месяце!");
+    daysOfTheMonth = Number(prompt("Введите количество дней в месяце:"));
+}
 let firstFriday = Number(prompt("Введите день первой пятницы месяца:"));
-if (firstFriday >= 1 && firstFriday <= 7) {
-    for (let i = 0; firstFriday + i * 7 <= 31; i++) {
-        console.log(`Сегодня пятница, ${firstFriday + i * 7}-е число. Необходимо подготовить отчет.`);
-    }
-} else {
-    console.log("Введено неверное число!");
+while (firstFriday < 1 || firstFriday > 7) {
+    console.log("Введена неверная дата первой пятницы!");
+    firstFriday = Number(prompt("Введите день первой пятницы месяца:"));
+}
+for (let i = 0; firstFriday + i * 7 <= 31; i++) {
+    console.log(`Сегодня пятница, ${firstFriday + i * 7}-е число. Необходимо подготовить отчет.`);
 }
