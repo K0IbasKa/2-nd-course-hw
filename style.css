@@ -34,6 +34,11 @@ a {
   font-size: 48px;
   font-weight: 700;
 }
+.title__footer {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
 
 .top {
   background-repeat: no-repeat;
@@ -90,8 +95,23 @@ a {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #9C0332;
 }
 
-.game {
+.game_1 {
   background-color: #000915;
+}
+.game_2 {
+  background-color: #000915;
+}
+.game_3 {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/bgi__game_3.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 .game-box {
   display: grid;
@@ -112,6 +132,9 @@ a {
   font-weight: 300;
   line-height: 32px;
 }
+.game__text_riddle {
+  text-align: center;
+}
 .game__button {
   width: 234px;
   height: 48px;
@@ -123,6 +146,11 @@ a {
   width: 485px;
   height: 333px;
   grid-column: span 6;
+}
+.game__img_1 {
+  margin-left: 135px;
+}
+.game__img_ {
   margin-left: 135px;
 }
 
@@ -164,6 +192,13 @@ a {
 }
 .content__link_3 {
   background-image: url(img/bgi__c_3.png);
+}
+
+.footer {
+  padding-top: 32.5px;
+  padding-bottom: 32.5px;
+  background-color: #000915;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
 }
 
 @media (max-width: 767px) {
@@ -214,12 +249,24 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 64px;
-    padding-top: 81px;
+    padding-top: 51px;
+  }
+  .game-box_seasons {
     padding-bottom: 85px;
+  }
+  .game-box_rememberTheWord {
+    padding-bottom: 90px;
+  }
+  .game_3 {
+    justify-content: flex-start;
+    padding-top: 50px;
   }
   .game__content {
     grid-column: span 4;
     align-items: center;
+  }
+  .game__content_rememberTheWord {
+    order: -1;
   }
   .game__text {
     font-size: 14px;
@@ -227,8 +274,14 @@ a {
   }
   .game__img {
     width: 344px;
-    height: 236px;
     grid-column: span 4;
+  }
+  .game__img_seasons {
     margin-left: 0px;
+    height: 236px;
+  }
+  .game__img_rememberTheWord {
+    margin-right: 0px;
+    height: 231px;
   }
 }/*# sourceMappingURL=style.css.map */

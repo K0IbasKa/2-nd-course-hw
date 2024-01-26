@@ -66,13 +66,29 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 64px;
-            padding-top: 81px;
-            padding-bottom: 85px;
+            padding-top: 51px;
+
+            &_seasons {
+                padding-bottom: 85px;
+            }
+
+            &_rememberTheWord {
+                padding-bottom: 90px;
+            }
+        }
+
+        &_3 {
+            justify-content: flex-start;
+            padding-top: 50px;
         }
 
         &__content {
             grid-column: span 4;
             align-items: center;
+
+            &_rememberTheWord {
+                order: -1;
+            }
         }
 
         &__text {
@@ -82,9 +98,17 @@
 
         &__img {
             width: 344px;
-            height: 236px;
             grid-column: span 4;
-            margin-left: 0px;
+
+            &_seasons {
+                margin-left: 0px;
+                height: 236px;
+            }
+
+            &_rememberTheWord {
+                margin-right: 0px;
+                height: 231px;
+            }
         }
     }
 }

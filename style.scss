@@ -35,6 +35,12 @@ a {
         font-size: 48px;
         font-weight: 700;
     }
+
+    &__footer {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
 }
 
 .top {
@@ -102,7 +108,29 @@ a {
 }
 
 .game {
-    background-color: #000915;
+
+    &_1 {
+        background-color: #000915;
+    }
+
+    &_2 {
+        background-color: #000915;
+    }
+
+    &_3 {
+        height: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0.00) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%),
+            url(img/bgi__game_3.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
 
     &-box {
         display: grid;
@@ -125,6 +153,10 @@ a {
         font-size: 18px;
         font-weight: 300;
         line-height: 32px;
+
+        &_riddle {
+            text-align: center;
+        }
     }
 
     &__button {
@@ -139,7 +171,14 @@ a {
         width: 485px;
         height: 333px;
         grid-column: span 6;
-        margin-left: 135px;
+
+        &_1 {
+            margin-left: 135px;
+        }
+
+        &_ {
+            margin-left: 135px;
+        }
     }
 }
 
@@ -187,6 +226,13 @@ a {
         }
 
     }
+}
+
+.footer {
+    padding-top: 32.5px;
+    padding-bottom: 32.5px;
+    background-color: #000915;
+    border-top: 1px solid rgba(184, 212, 255, 0.20)
 }
 
 @import 'mobile';
