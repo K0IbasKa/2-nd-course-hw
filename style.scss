@@ -92,14 +92,16 @@ a {
         font-weight: 400;
     }
 
-    &__game {
-        font-size: 18px;
-        font-weight: 400;
-    }
 }
 
 .button {
     transition: background-color 0.3s, box-shadow 0.1s 0.2s;
+
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+    }
 
     &:hover {
         background-color: #9C0332;
